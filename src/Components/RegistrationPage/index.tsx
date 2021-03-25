@@ -9,7 +9,7 @@ const RegistrationPage: FC = () => {
     <>
       <div className={style["reg-page_wrapper"]}>
         <Header />
-        <RegForm/>
+        <RegForm />
         <Footer />
       </div>
     </>

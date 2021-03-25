@@ -33,6 +33,7 @@
         "linebreak-style": "off",
         "prettier/prettier": "warn",
         "@typescript-eslint/explicit-module-boundary-types": "off",
-        "@typescript-eslint/no-explicit-any" : "off"
+        "@typescript-eslint/no-explicit-any" : "off",
+        "react/require-default-props": [0, { "ignoreFunctionalComponents": true }]
     }
 }

@@ -6,7 +6,7 @@ import AuthPageContainer from "../AuthPageContainer";
 function App() {
   return (
     <>
-      <RegistrationPage/>
+      <RegistrationPage />
       {/* <AuthPageContainer /> */}
       {/* <MainPageContainer /> */}
     </>
