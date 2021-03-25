@@ -1,0 +1,23 @@
+.flexbox-container{
+    // border:1px dashed red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    }
+    
+    .form {
+      border:2px solid #333;
+      width: 400px;
+      height: 500px;
+      background-color: rgb(172, 172, 172);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    
+    .form input{
+      width: 200px;
+      border: 1px solid #141414;
+    }
