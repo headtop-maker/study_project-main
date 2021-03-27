@@ -13,16 +13,7 @@ interface IProps {
 }
 
 const RegTextInput: FC<IProps> = (props: IProps) => {
-  const {
-    title,
-    setForm,
-    type,
-    name,
-    value,
-    checkPass,
-    pass,
-    repPass,
-  } = props;
+  const { title, setForm, type, name, value, checkPass, pass, repPass } = props;
 
   return (
     <>
@@ -34,8 +25,6 @@ const RegTextInput: FC<IProps> = (props: IProps) => {
         value={value}
         onChange={(event) => {
           setForm(event.currentTarget.value);
-          console.log(event.currentTarget.value);
-          if (checkPass) checkPass(pass, repPass);
         }}
       />
     </>

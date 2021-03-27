@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import style from "./RegForm.module.scss";
 import RegTextInput from "../../Common/Forms/RegTextInput";
 
@@ -21,13 +21,15 @@ const RegForm: FC = () => {
     alert("Очищено");
   };
 
-  const checkPass = (password1: string, repeatPassword1: string) => {
-    if (password1 !== repeatPassword1) {
+  const checkPass: any = () => {
+    if (password !== repeatPassword) {
       setMessage("пароли не совпадают");
     } else {
       setMessage("");
     }
   };
+
+  useEffect(checkPass, [password, repeatPassword]);
 
   return (
     <>
